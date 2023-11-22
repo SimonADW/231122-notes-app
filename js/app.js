@@ -8,6 +8,7 @@ const notesContainer = document.querySelector(".notes-container");
 
 const handleNotes = ()=> {
 	if(userNote.value.trim() === "") {
+		errorMessage.textContent = "Please enter a note";
 		errorMessage.style.display = "block";
 		return;
 	}
@@ -27,8 +28,12 @@ const handleNotes = ()=> {
 }
 
 // Disappear errormessage
-userNote.addEventListener("focus", ()=> {
+userNote.addEventListener("input", ()=> {
 	errorMessage.style.display = "none";
+	if(userNote.textLength >= 200) {
+		errorMessage.style.display = "block";
+		errorMessage.textContent = "You have reached the max number of characters";
+	}
 })
 
 submitButton.addEventListener("click", handleNotes)
