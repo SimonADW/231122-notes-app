@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 24px;
+}
+
+button {
+	background: var(--color-tercary);
+	border-radius: 50% ;
+	width: 100px;
+	height: 100px;
+	box-shadow: none;
+	border-style: none;
+	margin-left: 1rem;
+	transition: 300ms;
+}
+
+button:hover {
+	background: var(--color-hover);
+	transform: scale(1.05);
+}
+
+button:active {
+	background: var(--color-active);
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	background: var(--color-primary);
+	display: flex;
+	flex-direction: column;
+}
+
+.page-heading {
+	flex-basis: 10%;
+	color: beige;
+	background: var(--color-secondary);
+	padding: 0.5rem 1rem;
+}
+
+.add-note-container {
+	width: 100%;
+	flex-basis: 25%;
+	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+}
+
+.add-note-container div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 80%;
+}
+
+.add-note-container p {
+	flex-basis: 20%;
+	margin: 0 auto;
+}
+
+textarea {
+	width: 40%;
+	height: 80%;
+	resize: none;
+	border: none;
+	padding: 1rem;
+	font-size: 0.7rem;
+	transition: 300ms;
+}
+
+textarea:focus {
+	border: 2px solid azure;
+	box-shadow: 0 0 8px var(--color-tercary);
+}
+
+.notes-container {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2.5%;
+	flex-basis: 65%;
+	overflow: auto;
+	padding: 1rem 1rem;
+
+}
+
+.sticky-div {
+	width: 18%;
+	min-height: 200px;
+	min-width: 200px;
+	background: white;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.error-message {
+	display: none;
+}

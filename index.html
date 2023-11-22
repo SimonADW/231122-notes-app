@@ -3,18 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Notes taking app</title>
+	<title>Sticky notes app</title>
 
+	<link rel="stylesheet" href="css/variables.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/app.js" defer></script>
 </head>
 <body>
-	<header>
-
-	</header>
-	
 	<main>
+		<header>
+			<h1 class="page-heading">Stick it</h1>
+		</header>
+		<section class="add-note-container">
+			<div class="input-container">
+				<textarea name="note-input" id="note-input" cols="30" rows="10"></textarea>
+				<button class="submit-button">Stick note</button>
+			</div>
+			<p class="error-message">Please enter a note</p>
+		</section>
 
+		<section>
+			<div class="notes-container">
+
+
+			</div>
+		</section>
 
 	</main>
 
