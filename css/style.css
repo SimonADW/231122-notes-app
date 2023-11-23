@@ -9,6 +9,14 @@ html {
 }
 
 button {
+	box-shadow: none;
+	border-style: none;
+	background: transparent;
+	cursor: pointer;
+
+}
+
+.submit-button {
 	background: var(--color-tercary);
 	border-radius: 50% ;
 	width: 100px;
@@ -21,7 +29,7 @@ button {
 	transition: 300ms;
 }
 
-button:hover {
+.submit-button:hover {
 	background: var(--color-hover);
 	transform: scale(1.05);
 }
@@ -105,6 +113,27 @@ textarea:focus {
 	background: white;
 	padding: 1rem;
 	word-wrap: break-word;
+}
+
+.sticky-div:hover {
+	position: relative;
+	border: 2px solid azure;
+	box-shadow: 0 0 8px var(--color-tercary);
+}
+
+.trashbutton {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	display: none;
+}
+
+.sticky-div:hover .trashbutton {
+	display: block;
+}
+
+.trashbutton:hover {
+	transform: rotate(-8deg);
 }
 
 .error-message {
