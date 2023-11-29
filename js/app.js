@@ -31,7 +31,7 @@ const handleNotes = ()=> {
 
 	const icon = document.createElement("i");
 	trashButton.appendChild(icon);
-	icon.classList.add("fas fa-trash-can");
+	icon.className = "fas fa-trash-can";
 
 	const removeNote = ()=> {
 		currentNote = event.currentTarget.parentNode;
