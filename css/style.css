@@ -138,5 +138,15 @@ textarea:focus {
 
 .error-message {
 	display: none;
-	transform: translateX(-40%);
+	margin: 0 auto;
+	padding-right: 100px;
 }
+
+
+@media screen and (max-width: 670px){
+	.error-message {
+		padding: 20px;
+		text-align: center;
+	}
+}
+
